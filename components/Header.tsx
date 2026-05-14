@@ -4,56 +4,43 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-sm border-b border-red-100 transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo Section */}
-          <div className="flex flex-shrink-0 items-center">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative flex items-center justify-center h-12 w-12 rounded-full bg-red-600 text-white transform group-hover:scale-105 transition-transform duration-300">
-                <Wifi className="h-6 w-6" />
-                <div className="absolute inset-0 rounded-full border-2 border-red-600 animate-ping opacity-20"></div>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-2xl tracking-tight text-gray-900 leading-none">
-                  ACT <span className="text-red-600">FIBERNET</span>
-                </span>
-                <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
-                  Bangalore
-                </span>
-              </div>
-            </Link>
-          </div>
+        <div className="flex items-center justify-between h-20">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-orange-500 shadow-lg shadow-red-500/20">
+              <Wifi className="h-6 w-6 text-white" />
+              <span className="absolute inset-0 rounded-full border border-white/20"></span>
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="text-lg font-black tracking-tight text-white">ACT <span className="text-red-400">FIBERNET</span></span>
+              <span className="text-xs uppercase tracking-[0.24em] text-slate-300">Bangalore Fiber</span>
+            </div>
+          </Link>
 
-          {/* Quick Contact Buttons (Desktop) */}
-          <div className="hidden md:flex items-center gap-6">
-            <a 
-              href="https://maps.app.goo.gl/463PpFzznK672WCb9?g_st=aw" 
+          <nav className="hidden lg:flex items-center gap-10 text-sm font-semibold text-slate-300">
+            <a href="#offers" className="transition-colors hover:text-white">Plans</a>
+            <a href="#installation" className="transition-colors hover:text-white">Installations</a>
+            <a href="#contact" className="transition-colors hover:text-white">Contact</a>
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="https://maps.app.goo.gl/463PpFzznK672WCb9?g_st=aw"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
+              className="hidden md:inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/20 hover:bg-white/10"
             >
-              <Navigation className="h-5 w-5" />
-              <span>Locate Us</span>
+              <Navigation className="h-4 w-4" />
+              Locate Us
             </a>
-            
+
             <a
               href="tel:+919740436550"
-              className="group relative inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 font-semibold text-white rounded-full overflow-hidden shadow-lg shadow-red-600/30 hover:shadow-red-600/50 transition-all duration-300 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-red-500/30 transition hover:-translate-y-0.5"
             >
-              <div className="absolute inset-0 w-full h-full bg-white/20 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></div>
-              <Phone className="h-5 w-5 z-10 animate-pulse" />
-              <span className="z-10 tracking-wide">9740436550</span>
-            </a>
-          </div>
-
-          {/* Mobile Menu Button / Compact Call */}
-          <div className="md:hidden flex items-center">
-             <a
-              href="tel:+919740436550"
-              className="flex items-center justify-center p-3 text-white bg-red-600 rounded-full shadow-lg"
-            >
-              <Phone className="h-5 w-5" />
+              <Phone className="h-4 w-4" />
+              Call Sales
             </a>
           </div>
         </div>

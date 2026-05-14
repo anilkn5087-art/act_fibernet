@@ -7,7 +7,7 @@ import FloatingContact from '@/components/FloatingContact';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-white overflow-hidden">
+    <main className="min-h-screen overflow-hidden bg-slate-950 text-white">
       <Header />
       <HeroCarousel />
       <OffersSection />
