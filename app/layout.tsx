@@ -18,6 +18,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ACT Fibernet Bangalore | Internet Service Provider",
   description: "Get the best internet plans, high-speed fiber broadband, and smart WiFi installation with ACT Fibernet Bangalore.",
+  keywords: [
+    "2.4 ghz vs 5ghz wifi",
+    "ACT Broadband Plans Bangalore",
+    "ACT Customer Care",
+    "ACT bill payment online",
+    "ACT speed test",
+    "Broadband Plans",
+    "Home Wifi Plans",
+    "How Change ACT Broadband Plan",
+    "How To Find Wifi Password",
+    "How To Increase Wifi Speed",
+    "New Broadband Connection",
+    "Unlimited Wifi Plans for Home",
+    "Wifi Speed Test",
+    "act broadband plans",
+    "uses of internet"
+  ],
 };
 
 export default function RootLayout({
