@@ -7,7 +7,7 @@ const plans = [
   {
     category: "Speed",
     id: "speed-1",
-    speed: "50 Mbps", price: "₹559", name: "Pure Speed Base",
+    speed: "50 Mbps", price: "₹575", name: "Pure Speed Base",
     color: "from-blue-500 to-cyan-500", text: "text-blue-600",
     features: ["Unlimited Data", "Good for 1-2 devices", "Free Router Usage"], icon: Wifi
   },
