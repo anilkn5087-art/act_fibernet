@@ -39,7 +39,7 @@ export default function Footer() {
                 <div className="flex flex-col">
                   <a href="tel:+918123114647" className="hover:text-white transition-colors font-semibold">8123114647</a>
                   <a href="tel:+919740436550" className="hover:text-white transition-colors">9740436550</a>
-                    <a href="tel:+918088426559" className="hover:text-white transition-colors">8088426559</a>
+                  <a href="tel:+918088426559" className="hover:text-white transition-colors">8088426559</a>
                 </div>
               </li>
               <li className="flex items-center gap-3 group">
@@ -71,21 +71,21 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <h4 className="text-white font-bold text-base mb-4 tracking-wide">Popular Searches</h4>
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs sm:text-sm text-slate-400 leading-none">
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Wifi For Co-Living</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Wifi For Co-Working</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">best business broadband</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">business broadband solutions</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">business managed wifi</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">corporate broadband plans</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">how to manage wifi</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">internet leased line</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">leased line connection</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">leased line vs broadband</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">managed wifi solutions</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">sd wan solutions</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">sd wan vs mpls</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">what is leased line</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">what is managed wifi</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">2.4 ghz vs 5ghz wifi</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT Broadband Plans Bangalore</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT Customer Care</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT bill payment online</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT speed test</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Broadband Plans</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Home Wifi Plans</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">How Change ACT Broadband Plan</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">How To Find Wifi Password</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">How To Increase Wifi Speed</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">New Broadband Connection</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Unlimited Wifi Plans for Home</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Wifi Speed Test</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">act broadband plans</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">uses of internet</a>
           </div>
         </div>
 
