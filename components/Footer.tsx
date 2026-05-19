@@ -67,7 +67,29 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-center">
+        {/* Popular Searches */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <h4 className="text-white font-bold text-base mb-4 tracking-wide">Popular Searches</h4>
+          <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs sm:text-sm text-slate-400 leading-none">
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Wifi For Co-Living</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Wifi For Co-Working</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">best business broadband</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">business broadband solutions</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">business managed wifi</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">corporate broadband plans</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">how to manage wifi</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">internet leased line</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">leased line connection</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">leased line vs broadband</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">managed wifi solutions</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">sd wan solutions</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">sd wan vs mpls</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">what is leased line</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">what is managed wifi</a>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-xs text-slate-500 mb-2">
             Disclaimer: Offers, prices, and speeds are subject to change. Terms & conditions apply.
           </p>
