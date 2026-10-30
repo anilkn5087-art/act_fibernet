@@ -8,7 +8,7 @@ const bannerSlide = { id: 1, src: '/images/hero9.jpeg', alt: "ACT SmartWiFi Bann
 export default function HeroBanner() {
 
   return (
-    <div className="relative w-[calc(100%-1rem)] sm:w-auto bg-gradient-to-r from-[#7a0000] to-[#ff5a00] py-10 sm:py-16 lg:py-24 overflow-hidden   shadow-2xl">
+    <div className="relative  sm:w-auto bg-gradient-to-r from-[#7a0000] to-[#ff5a00] py-10 sm:py-16 lg:py-24 overflow-hidden   shadow-2xl">
       {/* Decorative Light Effect */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] rounded-full bg-orange-200 blur-3xl opacity-30 pointer-events-none z-0"></div>
 
