@@ -1,5 +1,9 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Globe } from 'lucide-react';
+import Link from 'next/link';
+import { MapPin, Phone, Globe } from 'lucide-react';
+import { allAreas, areaHref, footerAreaSlugs, popularSearches, PHONE_NUMBERS } from '@/lib/areas';
+
+const footerAreas = footerAreaSlugs.map((slug) => allAreas.find((a) => a.slug === slug)!);
 
 export default function Footer() {
   return (
@@ -24,8 +28,9 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-6 tracking-wide">Helpful Links</h3>
             <ul className="space-y-4 text-sm font-medium">
-              <li><a href="#offers" className="hover:text-white transition-colors">Broadband Plans</a></li>
-              <li><a href="#installation" className="hover:text-white transition-colors">Installation Showcase</a></li>
+              <li><Link href="/plans" className="hover:text-white transition-colors">Broadband Plans</Link></li>
+              <li><Link href="/broadband-bangalore" className="hover:text-white transition-colors">Areas We Serve</Link></li>
+              <li><Link href="/#installation" className="hover:text-white transition-colors">Installation Showcase</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Upgrade Plan</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Smart WiFi</a></li>
             </ul>
@@ -36,8 +41,10 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3 group">
                 <Phone className="w-5 h-5 text-red-400 shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                <div className="flex flex-col">
-                  <a href="tel:+919740436550" className="hover:text-white transition-colors">9740436550</a>    
+                <div className="flex flex-col gap-1">
+                  {PHONE_NUMBERS.map((n) => (
+                    <a key={n} href={`tel:+91${n}`} className="hover:text-white transition-colors">{n}</a>
+                  ))}
                 </div>
               </li>
               <li className="flex items-center gap-3 group">
@@ -65,25 +72,30 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Popular Searches */}
+        {/* Areas We Serve */}
         <div className="mt-12 pt-8 border-t border-white/10">
+          <h4 className="text-white font-bold text-base mb-4 tracking-wide">ACT Fibernet Near You</h4>
+          <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs sm:text-sm text-slate-400 leading-none">
+            {footerAreas.map((a) => (
+              <Link key={a.slug} href={areaHref(a)} className="hover:text-white transition-colors whitespace-nowrap">
+                ACT Fibernet {a.name}
+              </Link>
+            ))}
+            <Link href="/broadband-bangalore" className="text-red-400 font-semibold hover:text-red-300 transition-colors whitespace-nowrap">
+              All areas & PIN codes →
+            </Link>
+          </div>
+        </div>
+
+        {/* Popular Searches */}
+        <div className="mt-8 pt-8 border-t border-white/10">
           <h4 className="text-white font-bold text-base mb-4 tracking-wide">Popular Searches</h4>
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs sm:text-sm text-slate-400 leading-none">
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">2.4 ghz vs 5ghz wifi</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT Broadband Plans Bangalore</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT Customer Care</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT bill payment online</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">ACT speed test</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Broadband Plans</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Home Wifi Plans</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">How Change ACT Broadband Plan</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">How To Find Wifi Password</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">How To Increase Wifi Speed</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">New Broadband Connection</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Unlimited Wifi Plans for Home</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Wifi Speed Test</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">act broadband plans</a>
-            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">uses of internet</a>
+            {popularSearches.map((s) => (
+              <Link key={s.label} href={s.href} className="hover:text-white transition-colors whitespace-nowrap">
+                {s.label}
+              </Link>
+            ))}
           </div>
         </div>
 

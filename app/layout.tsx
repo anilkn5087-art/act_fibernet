@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
+import { SITE_URL } from "@/lib/areas";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,26 +16,40 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteDescription =
+  "ACT Fibernet Bangalore offers high-speed fiber broadband internet connections for homes and offices. Explore 50 Mbps, 100 Mbps, 200 Mbps, 400 Mbps and 1 Gbps plans. Contact us for new connections, installation and broadband support in Bangalore.";
+
 export const metadata: Metadata = {
-  title: "ACT Fibernet Bangalore | Internet Service Provider",
-  description: "Get the best internet plans, high-speed fiber broadband, and smart WiFi installation with ACT Fibernet Bangalore.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "ACT Fibernet Bangalore | High Speed Broadband & WiFi Connection",
+    template: "%s | ACT Fibernet Bangalore",
+  },
+  description: siteDescription,
   keywords: [
-    "2.4 ghz vs 5ghz wifi",
+    "ACT Fibernet Bangalore",
+    "ACT Broadband Bangalore",
+    "ACT Fiber Internet Connection Bangalore",
+    "ACT Fibernet New Connection",
+    "Best Broadband in Bangalore",
+    "High Speed Fiber Internet Bangalore",
+    "WiFi Connection Bangalore",
+    "Home Broadband Bangalore",
+    "Office Internet Connection Bangalore",
+    "Unlimited WiFi Plans Bangalore",
     "ACT Broadband Plans Bangalore",
-    "ACT Customer Care",
-    "ACT bill payment online",
-    "ACT speed test",
-    "Broadband Plans",
-    "Home Wifi Plans",
-    "How Change ACT Broadband Plan",
-    "How To Find Wifi Password",
-    "How To Increase Wifi Speed",
     "New Broadband Connection",
-    "Unlimited Wifi Plans for Home",
-    "Wifi Speed Test",
-    "act broadband plans",
-    "uses of internet"
   ],
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: SITE_URL,
+    siteName: "ACT Fibernet Bangalore",
+    title: "ACT Fibernet Bangalore | High Speed Broadband & WiFi Connection",
+    description: siteDescription,
+    images: [{ url: "/images/hero2.jpeg", alt: "ACT Fibernet Bangalore broadband" }],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
