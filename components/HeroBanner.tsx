@@ -3,12 +3,12 @@ import React from 'react';
 import { Users, Zap, Wifi } from 'lucide-react';
 import Image from 'next/image';
 
-const bannerSlide = { id: 1, src: '/images/hero1.jpeg', alt: "ACT SmartWiFi Banner", theme: "from-red-600 to-orange-500" };
+const bannerSlide = { id: 1, src: '/images/hero9.jpeg', alt: "ACT SmartWiFi Banner", theme: "from-red-600 to-orange-500" };
 
 export default function HeroBanner() {
 
   return (
-    <div className="relative w-[calc(100%-1rem)] sm:w-auto bg-gradient-to-r from-[#7a0000] to-[#ff5a00] py-10 sm:py-16 lg:py-24 overflow-hidden rounded-2xl sm:rounded-3xl mx-2 sm:mx-6 lg:mx-8 shadow-2xl">
+    <div className="relative w-[calc(100%-1rem)] sm:w-auto bg-gradient-to-r from-[#7a0000] to-[#ff5a00] py-10 sm:py-16 lg:py-24 overflow-hidden   shadow-2xl">
       {/* Decorative Light Effect */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] rounded-full bg-orange-200 blur-3xl opacity-30 pointer-events-none z-0"></div>
 
@@ -72,7 +72,7 @@ export default function HeroBanner() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                       quality={100}
                       priority
-                      className="object-contain w-full h-full p-2"
+                      className="object-fill w-full h-full p-2"
                     />
                   </div>
                 </div>

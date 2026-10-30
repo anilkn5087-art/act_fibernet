@@ -8,20 +8,20 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-slate-950/90 backdrop-blur-xl border-b border-white/10">
+    <header className="sticky top-0 z-50 w-full bg-slate-700/90 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             {/* Wrapper added to elegantly handle the JPEG's lack of transparency on a dark header */}
-            <div className="bg-white rounded-xl sm:rounded-2xl px-3 sm:px-4 py-1.5 sm:py-2 shadow-[0_0_15px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] transition-shadow">
+            <div className="bg-transparent rounded-xl sm:rounded-2xl ">
               <Image 
-                src="/images/logo.jpeg" 
+                src="/images/logo1.jpeg" 
                 alt="ACT Fibernet" 
-                width={140} 
-                height={50} 
-                className="h-7 sm:h-9 w-auto object-contain mix-blend-multiply"
+                width={240} 
+                height={80} 
+                className="h-10 sm:h-12 w-auto object-contain rounded-xl sm:rounded-2xl"
                 priority
               />
             </div>

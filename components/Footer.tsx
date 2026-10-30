@@ -37,14 +37,12 @@ export default function Footer() {
               <li className="flex items-start gap-3 group">
                 <Phone className="w-5 h-5 text-red-400 shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                 <div className="flex flex-col">
-                  <a href="tel:+918123114647" className="hover:text-white transition-colors font-semibold">8123114647</a>
-                  <a href="tel:+919740436550" className="hover:text-white transition-colors">9740436550</a>
-                  <a href="tel:+918088426559" className="hover:text-white transition-colors">8088426559</a>
+                  <a href="tel:+919740436550" className="hover:text-white transition-colors">9740436550</a>    
                 </div>
               </li>
               <li className="flex items-center gap-3 group">
                 <Globe className="w-5 h-5 text-red-400 shrink-0 group-hover:scale-110 transition-transform" />
-                <a href="https://www.actfibernetbangalore.in" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">www.actfibernetbangalore.in</a>
+                <a href="https://www.fibernetbangalore.in" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">www.fibernetbangalore.in</a>
               </li>
             </ul>
           </div>
